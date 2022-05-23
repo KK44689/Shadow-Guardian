@@ -18,7 +18,6 @@ public class LoopBG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log (repeatWidth);
         if (transform.position.x < -8.5f)
         {
             transform.position = startPos;
