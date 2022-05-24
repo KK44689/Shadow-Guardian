@@ -19,7 +19,7 @@ public class Obstacle : MonoBehaviour
         // check if obstacles damage player
         if (other.gameObject.CompareTag("Player"))
         {
-            // Debug.Log("damage player");
+            Debug.Log("player damaged");
             Destroy (gameObject);
         }
         // check if spirit protect the player

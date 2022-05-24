@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spirit
   - Obstacle
+  - Bullet
   layers:
   - Default
   - TransparentFX

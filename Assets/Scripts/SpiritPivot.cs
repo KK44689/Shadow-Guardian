@@ -6,10 +6,19 @@ public class SpiritPivot : MonoBehaviour
 {
     GameObject Player;
 
+    GameObject Spirit;
+
+    // soul fragment
+    public GameObject soulFragment;
+
+    [SerializeField]
+    private float shootForce = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
+        Spirit = GameObject.FindWithTag("Spirit");
     }
 
     // Update is called once per frame
@@ -46,10 +55,29 @@ public class SpiritPivot : MonoBehaviour
                         Quaternion.Euler(180, 180, -rotationZ);
                 }
             }
+
+            // spirit attack still obstacles
         }
         else
         {
             transform.rotation = Quaternion.Euler(0f, 0f, -60f);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 spawnPos =
+                new Vector3(Spirit.transform.position.x,
+                    Spirit.transform.position.y + 0.5f);
+            GameObject soulFragmentPrefab =
+                Instantiate(soulFragment,
+                spawnPos,
+                soulFragment.transform.rotation);
+            soulFragmentPrefab
+                .GetComponent<Rigidbody2D>()
+                .AddForce(Vector3.right * shootForce, ForceMode2D.Impulse);
         }
     }
 }
