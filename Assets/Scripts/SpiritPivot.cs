@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpiritPivot : MonoBehaviour
@@ -14,11 +15,26 @@ public class SpiritPivot : MonoBehaviour
     [SerializeField]
     private float shootForce = 2f;
 
+    [SerializeField]
+    private int soulCounts = 10;
+
+    [SerializeField]
+    private float reloadDelay = 1f;
+
+    // souls fragment texts
+    public TextMeshProUGUI soulsCountText;
+
+    public TextMeshProUGUI reloadingText;
+
+    public TextMeshProUGUI reloadingAlertText;
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
         Spirit = GameObject.FindWithTag("Spirit");
+        reloadingText.gameObject.SetActive(false);
+        reloadingAlertText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -60,24 +76,60 @@ public class SpiritPivot : MonoBehaviour
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0f, 0f, -60f);
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
     }
 
     void Update()
     {
+        soulsCountText.text = "Souls Count : " + soulCounts;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 spawnPos =
-                new Vector3(Spirit.transform.position.x,
-                    Spirit.transform.position.y + 0.5f);
-            GameObject soulFragmentPrefab =
-                Instantiate(soulFragment,
-                spawnPos,
-                soulFragment.transform.rotation);
-            soulFragmentPrefab
-                .GetComponent<Rigidbody2D>()
-                .AddForce(Vector3.right * shootForce, ForceMode2D.Impulse);
+            CheckSoulCounts();
+            Debug.Log("souls " + soulCounts);
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(ReloadDelay());
+            Debug.Log("start reload");
+        }
+    }
+
+    void CheckSoulCounts()
+    {
+        if (soulCounts > 0)
+        {
+            ShootSouls();
+        }
+        if (soulCounts == 0)
+        {
+            reloadingAlertText.gameObject.SetActive(true);
+        }
+    }
+
+    IEnumerator ReloadDelay()
+    {
+        reloadingAlertText.gameObject.SetActive(false);
+        reloadingText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(reloadDelay);
+        reloadingText.gameObject.SetActive(false);
+        soulCounts = 10;
+        reloadDelay = 1f;
+        Debug.Log("reload complete");
+    }
+
+    void ShootSouls()
+    {
+        Vector3 spawnPos =
+            new Vector3(Spirit.transform.position.x,
+                Spirit.transform.position.y + 0.5f);
+        GameObject soulFragmentPrefab =
+            Instantiate(soulFragment,
+            spawnPos,
+            soulFragment.transform.rotation);
+        soulFragmentPrefab
+            .GetComponent<Rigidbody2D>()
+            .AddForce(Vector3.right * shootForce, ForceMode2D.Impulse);
+        soulCounts--;
     }
 }
