@@ -16,14 +16,16 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // check if obstacles damage player
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("damage player");
+            // Debug.Log("damage player");
             Destroy (gameObject);
         }
+        // check if spirit protect the player
         if (other.gameObject.CompareTag("Spirit"))
         {
-            Debug.Log("spirit protect");
+            // Debug.Log("spirit protect");
             Destroy (gameObject);
         }
     }
