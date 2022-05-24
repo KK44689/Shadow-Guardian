@@ -16,5 +16,9 @@ public class DestroyOutOfBound : MonoBehaviour
         {
             Destroy (gameObject);
         }
+        if (transform.position.y > 7f)
+        {
+            Destroy (gameObject);
+        }
     }
 }
