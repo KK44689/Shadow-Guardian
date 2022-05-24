@@ -66,16 +66,11 @@ public class SpawnManager : MonoBehaviour
 
     float spawnStillPosY = -2.23f;
 
-    // playerController
-    PlayerController playerScript;
-
     // Start is called before the first frame update
     void Start()
     {
-        playerScript =
-            GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        StartCoroutine(SpawnMovableObstacles());
-        StartCoroutine(SpawnStillObstacles());
+        StartCoroutine("SpawnMovableObstacles");
+        StartCoroutine("SpawnStillObstacles");
     }
 
     // Update is called once per frame
@@ -127,7 +122,7 @@ public class SpawnManager : MonoBehaviour
     // spawn obstacle
     IEnumerator SpawnMovableObstacles()
     {
-        while (playerScript.isGameActive)
+        while (true)
         {
             Instantiate(movableObstacles[RandomObstaclesIndex(movableObstacles)],
             GenRandomSpawnMovablePos(),
@@ -138,7 +133,7 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator SpawnStillObstacles()
     {
-        while (playerScript.isGameActive)
+        while (true)
         {
             Instantiate(stillObstacles[RandomObstaclesIndex(stillObstacles)],
             GenSpawnStillPos(),
