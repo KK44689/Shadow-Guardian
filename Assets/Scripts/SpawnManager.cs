@@ -49,9 +49,14 @@ public class SpawnManager : MonoBehaviour
     Vector3 GenRandomSpawnMovablePos()
     {
         float spawnPosY = Random.Range(minSpawnPosY, maxSpawnPosY);
-        float[] spawnPosX = new float[] { minSpawnPosX, maxSpawnPosX };
-        int spawnXIndex = Random.Range(0, 2);
-        return new Vector3(spawnPosX[spawnXIndex], spawnPosY, 0);
+        float spawnPosX = Random.Range(minSpawnPosX, maxSpawnPosX);
+
+        // int spawnXIndex = Random.Range(0, 2);
+        if (spawnPosX > minSpawnPosX || spawnPosX < maxSpawnPosX)
+        {
+            spawnPosY = 6f;
+        }
+        return new Vector3(spawnPosX, spawnPosY, 0);
     }
 
     // generate the still obstacle spawn pos
