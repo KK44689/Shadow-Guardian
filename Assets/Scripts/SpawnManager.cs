@@ -4,14 +4,33 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject[] Obstacles;
+    public GameObject[] movableObstacles;
 
-    private float obstacleSpawnRate = 3f;
+    public GameObject[] stillObstacles;
+
+    private float obstacleMovableSpawnRate = 3f;
+
+    private float obstacleStillSpawnRate = 10f;
+
+    // spawn movable obstacle pos
+    float minSpawnPosY = -3f;
+
+    float maxSpawnPosY = 5.2f;
+
+    float minSpawnPosX = -9f;
+
+    float maxSpawnPosX = 10f;
+
+    // spawn still obstacle pos
+    float spawnStillPosX = 10f;
+
+    float spawnStillPosY = -2.23f;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("SpawnObstacles");
+        StartCoroutine("SpawnMovableObstacles");
+        StartCoroutine("SpawnStillObstacles");
     }
 
     // Update is called once per frame
@@ -20,19 +39,25 @@ public class SpawnManager : MonoBehaviour
     }
 
     // random the obstacle's type
-    int RandomObstaclesIndex()
+    int RandomObstaclesIndex(GameObject[] obstacles)
     {
-        int index = Random.Range(0, Obstacles.Length);
+        int index = Random.Range(0, obstacles.Length);
         return index;
     }
 
-    // random the obstacle spawn pos
-    Vector3 GenRandomSpawnPos()
+    // random the movable obstacle spawn pos
+    Vector3 GenRandomSpawnMovablePos()
     {
-        float spawnPosY = Random.Range(-3f, 5.2f);
-        float[] spawnPosX = new float[] { -9f, 10f };
+        float spawnPosY = Random.Range(minSpawnPosY, maxSpawnPosY);
+        float[] spawnPosX = new float[] { minSpawnPosX, maxSpawnPosX };
         int spawnXIndex = Random.Range(0, 2);
         return new Vector3(spawnPosX[spawnXIndex], spawnPosY, 0);
+    }
+
+    // generate the still obstacle spawn pos
+    Vector3 GenSpawnStillPos()
+    {
+        return new Vector3(spawnStillPosX, spawnStillPosY, 0);
     }
 
     // random obstacle rotation degree
@@ -42,21 +67,35 @@ public class SpawnManager : MonoBehaviour
         return Quaternion.Euler(0, 0, rotationZ);
     }
 
-    float RandomSpawnRate()
+    // random obstacle spawn rate
+    float RandomSpawnRate(float maxSpawnRate)
     {
-        float spawnRate = Random.Range(0, obstacleSpawnRate);
+        float spawnRate = Random.Range(1f, maxSpawnRate);
         return spawnRate;
     }
 
     // spawn obstacle
-    IEnumerator SpawnObstacles()
+    IEnumerator SpawnMovableObstacles()
     {
         while (true)
         {
-            Instantiate(Obstacles[RandomObstaclesIndex()],
-            GenRandomSpawnPos(),
+            Instantiate(movableObstacles[RandomObstaclesIndex(movableObstacles)],
+            GenRandomSpawnMovablePos(),
             GenRandomRotation());
-            yield return new WaitForSeconds(RandomSpawnRate());
+            yield return new WaitForSeconds(RandomSpawnRate(obstacleMovableSpawnRate));
+        }
+    }
+
+    IEnumerator SpawnStillObstacles()
+    {
+        while (true)
+        {
+            Instantiate(stillObstacles[RandomObstaclesIndex(stillObstacles)],
+            GenSpawnStillPos(),
+            stillObstacles[RandomObstaclesIndex(stillObstacles)]
+                .transform
+                .rotation);
+            yield return new WaitForSeconds(RandomSpawnRate(obstacleStillSpawnRate));
         }
     }
 }
