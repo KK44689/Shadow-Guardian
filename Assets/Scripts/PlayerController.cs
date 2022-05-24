@@ -6,8 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     // player hp
     private int maxHp = 10;
+
     // game Manager
     GameManager gameManager;
+
+    // hp Bar
+    public HpBar hpBar;
 
     public int s_maxHp
     {
@@ -53,7 +57,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentHp = maxHp;
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        hpBar.SetMaxHp (maxHp);
+        hpBar.SetHp (maxHp);
+        gameManager =
+            GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -69,6 +76,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
             currentHp--;
+            hpBar.SetHp (currentHp);
         }
     }
 }
