@@ -10,7 +10,47 @@ public class SpawnManager : MonoBehaviour
 
     private float obstacleMovableSpawnRate = 3f;
 
+    public float s_obstacleMovableSpawnRate
+    {
+        get
+        {
+            return obstacleMovableSpawnRate;
+        }
+        set
+        {
+            if (value < 0)
+            {
+                Debug
+                    .LogError("You can't set obstacleMovableSpawnRate below zero!");
+            }
+            else
+            {
+                obstacleMovableSpawnRate = value;
+            }
+        }
+    }
+
     private float obstacleStillSpawnRate = 10f;
+
+    public float s_obstacleStillSpawnRate
+    {
+        get
+        {
+            return obstacleStillSpawnRate;
+        }
+        set
+        {
+            if (value < 0)
+            {
+                Debug
+                    .LogError("You can't set obstacleMovableSpawnRate below zero!");
+            }
+            else
+            {
+                obstacleStillSpawnRate = value;
+            }
+        }
+    }
 
     // spawn movable obstacle pos
     float minSpawnPosY = -3f;
