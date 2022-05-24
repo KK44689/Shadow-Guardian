@@ -164,6 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 259115647}
   - component: {fileID: 259115646}
+  - component: {fileID: 259115648}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -198,6 +199,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259115648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259115645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0710f8cc9a01f643bc92fdac5e344fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434578891
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +951,7 @@ GameObject:
   - component: {fileID: 1652072055}
   - component: {fileID: 1652072058}
   - component: {fileID: 1652072057}
+  - component: {fileID: 1652072059}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Player
@@ -1058,6 +1072,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1652072059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652072054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a0fcd1e5672bd48812d4d96c99b1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844553292
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,6 +28,9 @@ public class SpiritPivot : MonoBehaviour
 
     public TextMeshProUGUI reloadingAlertText;
 
+    // game Manager
+    GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +38,14 @@ public class SpiritPivot : MonoBehaviour
         Spirit = GameObject.FindWithTag("Spirit");
         reloadingText.gameObject.SetActive(false);
         reloadingAlertText.gameObject.SetActive(false);
+        gameManager =
+            GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && gameManager.isGameActive)
         {
             // get mouse position direction
             Vector3 difference =
@@ -82,16 +87,19 @@ public class SpiritPivot : MonoBehaviour
 
     void Update()
     {
-        soulsCountText.text = "Souls Count : " + soulCounts;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (gameManager.isGameActive)
         {
-            CheckSoulCounts();
-            Debug.Log("souls " + soulCounts);
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            StartCoroutine(ReloadDelay());
-            Debug.Log("start reload");
+            soulsCountText.text = "Souls Count : " + soulCounts;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                CheckSoulCounts();
+                Debug.Log("souls " + soulCounts);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(ReloadDelay());
+                Debug.Log("start reload");
+            }
         }
     }
 

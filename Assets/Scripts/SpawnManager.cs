@@ -66,9 +66,14 @@ public class SpawnManager : MonoBehaviour
 
     float spawnStillPosY = -2.23f;
 
+    // gameManager
+    GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameManager =
+            GameObject.Find("GameManager").GetComponent<GameManager>();
         StartCoroutine("SpawnMovableObstacles");
         StartCoroutine("SpawnStillObstacles");
     }
@@ -122,7 +127,7 @@ public class SpawnManager : MonoBehaviour
     // spawn obstacle
     IEnumerator SpawnMovableObstacles()
     {
-        while (true)
+        while (gameManager.isGameActive)
         {
             Instantiate(movableObstacles[RandomObstaclesIndex(movableObstacles)],
             GenRandomSpawnMovablePos(),
@@ -133,7 +138,7 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator SpawnStillObstacles()
     {
-        while (true)
+        while (gameManager.isGameActive)
         {
             Instantiate(stillObstacles[RandomObstaclesIndex(stillObstacles)],
             GenSpawnStillPos(),
