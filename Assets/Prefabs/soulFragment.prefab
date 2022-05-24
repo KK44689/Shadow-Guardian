@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4656118266513551468}
   - component: {fileID: 4656118266513551471}
   - component: {fileID: 4656118266513551470}
+  - component: {fileID: 2392047249270138198}
   m_Layer: 0
   m_Name: soulFragment
   m_TagString: Bullet
@@ -131,3 +132,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2392047249270138198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4656118266513551467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f1e59a2dbb5714891df053f542a7dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
