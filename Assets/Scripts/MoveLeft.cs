@@ -10,17 +10,22 @@ public class MoveLeft : MonoBehaviour
     // game Manager
     GameManager gameManager;
 
+    // player script
+    PlayerController playerScript;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager =
             GameObject.Find("GameManager").GetComponent<GameManager>();
+        playerScript =
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.isGameActive)
+        if (gameManager.isGameActive && !playerScript.s_isGirlDamaged)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }

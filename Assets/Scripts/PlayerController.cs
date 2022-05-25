@@ -53,14 +53,43 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //player damaged
+    private bool isGirlDamaged = false;
+
+    private float damagedDelays = 2f;
+
+    public bool s_isGirlDamaged
+    {
+        get
+        {
+            return isGirlDamaged;
+        }
+        set
+        {
+            isGirlDamaged = value;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        // set hp equal to max hp
         currentHp = maxHp;
+
+        // connect slider to values
         hpBar.SetMaxHp (maxHp);
         hpBar.SetHp (maxHp);
         gameManager =
             GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        // check if the girl is damaged
+        isGirlDamaged = false;
+    }
+
+    IEnumerator GirlDamaged()
+    {
+        yield return new WaitForSeconds(damagedDelays);
+        isGirlDamaged = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -76,7 +105,9 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
             currentHp--;
+            isGirlDamaged = true;
             hpBar.SetHp (currentHp);
+            StartCoroutine(GirlDamaged());
         }
     }
 }
