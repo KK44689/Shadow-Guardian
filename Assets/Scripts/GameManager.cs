@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // check if game active
     public bool isGameActive { get; set; }
 
+    // get player script
     PlayerController playerScript;
+
+    // gameover screen
+    public GameObject GameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +19,7 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         playerScript =
             GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        GameOverScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +28,10 @@ public class GameManager : MonoBehaviour
         if (playerScript.s_currentHp <= 0)
         {
             isGameActive = false;
+        }
+        if (!isGameActive)
+        {
+            GameOverScreen.SetActive(true);
         }
     }
 }
