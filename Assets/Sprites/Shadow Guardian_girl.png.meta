@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 8bcc03c4ad835084998be876ef38579f
+guid: 9fd9d39fa74180b49b13229d1196abdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4364034832326165938
-    second: bg_0
+      213: -3067113441889091227
+    second: Shadow Guardian_girl_0
   - first:
-      213: 5417047536705764260
-    second: bg_4
+      213: -1600608168116059550
+    second: Shadow Guardian_girl_2
   - first:
-      213: 380707909470287619
-    second: bg_7
+      213: -4945513635746035859
+    second: Shadow Guardian_girl_3
   - first:
-      213: 1406968098990366703
-    second: bg_8
+      213: -3136795357576101987
+    second: Shadow Guardian_girl_4
   - first:
-      213: -1693845262546454406
-    second: bg_9
+      213: -7493053820996305852
+    second: Shadow Guardian_girl_5
+  - first:
+      213: -8078621844820950593
+    second: Shadow Guardian_girl_6
+  - first:
+      213: -989805448336013210
+    second: Shadow Guardian_girl_7
+  - first:
+      213: 730016512033407585
+    second: Shadow Guardian_girl_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,106 +127,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_0
+      name: Shadow Guardian_girl_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4154
-        width: 6514
-        height: 635
+        x: 419
+        y: 1447
+        width: 414
+        height: 970
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a74cf0175df63c0800000000000000
-      internalID: -4364034832326165938
+      spriteID: 561006a239c6f65d0800000000000000
+      internalID: -3067113441889091227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_4
+      name: Shadow Guardian_girl_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3256
-        width: 6600
-        height: 695
+        x: 1336
+        y: 1451
+        width: 414
+        height: 966
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab70cca8083d2b40800000000000000
-      internalID: 5417047536705764260
+      spriteID: 2628adaf95f79c9e0800000000000000
+      internalID: -1600608168116059550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_7
+      name: Shadow Guardian_girl_3
       rect:
         serializedVersion: 2
-        x: 57
-        y: 2879
-        width: 12
-        height: 12
+        x: 1744
+        y: 2193
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 307782b93db884500800000000000000
-      internalID: 380707909470287619
+      spriteID: d67c18dfc810e5bb0800000000000000
+      internalID: -4945513635746035859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_8
+      name: Shadow Guardian_girl_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2086
-        width: 6600
-        height: 789
+        x: 2312
+        y: 1468
+        width: 415
+        height: 970
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fef90a6180e868310800000000000000
-      internalID: 1406968098990366703
+      spriteID: d9ff492ed3dd774d0800000000000000
+      internalID: -3136795357576101987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_9
+      name: Shadow Guardian_girl_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 514
-        width: 6600
-        height: 944
+        x: 270
+        y: 241
+        width: 419
+        height: 968
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a78b07545b04e78e0800000000000000
-      internalID: -1693845262546454406
+      spriteID: 44cb1acef33530890800000000000000
+      internalID: -7493053820996305852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow Guardian_girl_6
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 231
+        width: 418
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb18cb80c38f2ef80800000000000000
+      internalID: -8078621844820950593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow Guardian_girl_7
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 320
+        width: 746
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6688f2f50318342f0800000000000000
+      internalID: -989805448336013210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadow Guardian_girl_10
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 312
+        width: 680
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162cbef562a812a00800000000000000
+      internalID: 730016512033407585
       vertices: []
       indices: 
       edges: []

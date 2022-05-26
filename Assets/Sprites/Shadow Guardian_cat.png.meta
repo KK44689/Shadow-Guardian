@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 8bcc03c4ad835084998be876ef38579f
+guid: 338e86036977f8b449c6c775b92475d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4364034832326165938
-    second: bg_0
+      213: 1510248546323526559
+    second: Shadow Guardian_cat_0
   - first:
-      213: 5417047536705764260
-    second: bg_4
-  - first:
-      213: 380707909470287619
-    second: bg_7
-  - first:
-      213: 1406968098990366703
-    second: bg_8
-  - first:
-      213: -1693845262546454406
-    second: bg_9
+      213: -813047438508805653
+    second: Shadow Guardian_cat_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,106 +109,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_0
+      name: Shadow Guardian_cat_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4154
-        width: 6514
-        height: 635
+        x: 388
+        y: 1038
+        width: 662
+        height: 1133
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a74cf0175df63c0800000000000000
-      internalID: -4364034832326165938
+      spriteID: f93f92e1d0b75f410800000000000000
+      internalID: 1510248546323526559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_4
+      name: Shadow Guardian_cat_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3256
-        width: 6600
-        height: 695
+        x: 1245
+        y: 1024
+        width: 662
+        height: 1133
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab70cca8083d2b40800000000000000
-      internalID: 5417047536705764260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_7
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 2879
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 307782b93db884500800000000000000
-      internalID: 380707909470287619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2086
-        width: 6600
-        height: 789
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fef90a6180e868310800000000000000
-      internalID: 1406968098990366703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bg_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 514
-        width: 6600
-        height: 944
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a78b07545b04e78e0800000000000000
-      internalID: -1693845262546454406
+      spriteID: be1342299a977b4f0800000000000000
+      internalID: -813047438508805653
       vertices: []
       indices: 
       edges: []

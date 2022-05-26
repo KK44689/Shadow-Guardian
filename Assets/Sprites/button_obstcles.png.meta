@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 0b2bb15fb4d75854aad395b103f84e97
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6247735847397091986
+    second: button_obstcles_0
+  - first:
+      213: 4679382705329544900
+    second: button_obstcles_1
+  - first:
+      213: -196652376391943927
+    second: button_obstcles_2
+  - first:
+      213: 1730063372058776849
+    second: button_obstcles_3
+  - first:
+      213: -1782862538530111983
+    second: button_obstcles_4
+  - first:
+      213: 573438032276370284
+    second: button_obstcles_5
+  - first:
+      213: -1175948314103404366
+    second: button_obstcles_6
+  - first:
+      213: -1099986012428130991
+    second: button_obstcles_7
+  - first:
+      213: -6035130321941233824
+    second: button_obstcles_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +102,222 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: button_obstcles_0
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1833
+        width: 503
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ae39ab6aa64b650800000000000000
+      internalID: 6247735847397091986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_1
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1741
+        width: 1042
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce164f27c180f040800000000000000
+      internalID: 4679382705329544900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_2
+      rect:
+        serializedVersion: 2
+        x: 2191
+        y: 1722
+        width: 998
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909fbe0a4b9554df0800000000000000
+      internalID: -196652376391943927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1256
+        width: 504
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1155a7a787b620810800000000000000
+      internalID: 1730063372058776849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_4
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1011
+        width: 990
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ebf8b97fff147e0800000000000000
+      internalID: -1782862538530111983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_5
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 992
+        width: 966
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6338862ad245f700800000000000000
+      internalID: 573438032276370284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 660
+        width: 426
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8a5af1d313eafe0800000000000000
+      internalID: -1175948314103404366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 254
+        width: 1108
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155a257bc801cb0f0800000000000000
+      internalID: -1099986012428130991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_obstcles_8
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 244
+        width: 1031
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ff08b92f8ee3ca0800000000000000
+      internalID: -6035130321941233824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
