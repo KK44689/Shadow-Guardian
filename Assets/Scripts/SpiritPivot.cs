@@ -130,7 +130,7 @@ public class SpiritPivot : MonoBehaviour
     {
         Vector3 spawnPos =
             new Vector3(Spirit.transform.position.x,
-                Spirit.transform.position.y + 0.5f);
+                Spirit.transform.position.y + 2f);
         GameObject soulFragmentPrefab =
             Instantiate(soulFragment,
             spawnPos,

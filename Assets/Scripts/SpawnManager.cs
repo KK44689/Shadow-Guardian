@@ -64,7 +64,7 @@ public class SpawnManager : MonoBehaviour
     // spawn still obstacle pos
     float spawnStillPosX = 10f;
 
-    float spawnStillPosY = -2.23f;
+    float spawnStillPosY = -1f;
 
     // gameManager
     GameManager gameManager;
