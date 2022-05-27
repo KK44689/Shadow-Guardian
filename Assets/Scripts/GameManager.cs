@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class GameManager : MonoBehaviour
     // player animation
     Animator anim;
 
-    // gameover screen
-    public GameObject GameOverScreen;
+    // scene id
+    private int badEndingId = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         playerScript =
             GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        GameOverScreen.SetActive(false);
+
         anim = GameObject.FindWithTag("Player").GetComponent<Animator>();
     }
 
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
         if (!isGameActive)
         {
-            GameOverScreen.SetActive(true);
+            SceneManager.LoadScene (badEndingId);
             anim.SetBool("damaged", true);
         }
     }

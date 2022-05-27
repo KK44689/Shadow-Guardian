@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleForce: 0.1
-  obstacleReflectForce: 50
+  obstacleReflectForce: 100
 --- !u!61 &3614401387256029528
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ public class tutorial : MonoBehaviour
 
     private int index = 1;
 
+    // scene id
+    private int mainSceneId = 1;
+
     private void Start()
     {
         tutorials[0].SetActive(true);
@@ -26,7 +29,7 @@ public class tutorial : MonoBehaviour
         }
         if (index >= tutorials.Length)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene (mainSceneId);
         }
     }
 }
