@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     // get player script
     PlayerController playerScript;
 
+    // player animation
+    Animator anim;
+
     // gameover screen
     public GameObject GameOverScreen;
 
@@ -20,6 +23,7 @@ public class GameManager : MonoBehaviour
         playerScript =
             GameObject.FindWithTag("Player").GetComponent<PlayerController>();
         GameOverScreen.SetActive(false);
+        anim = GameObject.FindWithTag("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class GameManager : MonoBehaviour
         if (!isGameActive)
         {
             GameOverScreen.SetActive(true);
+            anim.SetBool("damaged", true);
         }
     }
 }

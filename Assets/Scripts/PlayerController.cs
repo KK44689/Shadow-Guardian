@@ -70,6 +70,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // animation
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,12 +87,17 @@ public class PlayerController : MonoBehaviour
 
         // check if the girl is damaged
         isGirlDamaged = false;
+
+        // animation
+        anim = GetComponent<Animator>();
     }
 
     IEnumerator GirlDamaged()
     {
+        anim.SetBool("damaged", true);
         yield return new WaitForSeconds(damagedDelays);
         isGirlDamaged = false;
+        anim.SetBool("damaged", false);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
