@@ -8,7 +8,7 @@ public class CheckTimelineEnd : MonoBehaviour
 {
     public PlayableDirector director;
 
-    private int mainSceneId = 1;
+    public int warpSceneId;
 
     void OnEnable()
     {
@@ -19,7 +19,7 @@ public class CheckTimelineEnd : MonoBehaviour
     {
         if (director == aDirector)
         {
-            SceneManager.LoadScene (mainSceneId);
+            SceneManager.LoadScene (warpSceneId);
         }
     }
 
