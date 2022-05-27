@@ -73,6 +73,13 @@ public class PlayerController : MonoBehaviour
     // animation
     Animator anim;
 
+    // sound
+    AudioSource audioSource;
+
+    public AudioClip girlDamagedSound;
+
+    public AudioClip girlCollideSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,11 +97,15 @@ public class PlayerController : MonoBehaviour
 
         // animation
         anim = GetComponent<Animator>();
+
+        // sound
+        audioSource = GetComponent<AudioSource>();
     }
 
     IEnumerator GirlDamaged()
     {
         anim.SetBool("damaged", true);
+
         yield return new WaitForSeconds(damagedDelays);
         isGirlDamaged = false;
         anim.SetBool("damaged", false);
@@ -104,6 +115,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
+            audioSource.PlayOneShot (girlCollideSound);
             gameManager.isGameActive = false;
         }
     }
@@ -112,6 +124,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
+            audioSource.PlayOneShot (girlDamagedSound);
             currentHp--;
             isGirlDamaged = true;
             hpBar.SetHp (currentHp);
