@@ -183,8 +183,8 @@ MonoBehaviour:
   m_text: They hugged each other tightly when the scythe of the Grim Reaper swang
     down to harvest their souls.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -449,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -99}
+  m_AnchoredPosition: {x: 0, y: -121.027374}
   m_SizeDelta: {x: 404.9874, y: 95.0584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &463305968
@@ -624,8 +624,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back to Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -758,8 +758,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ending 1/2 - The Grim Reaper's Grasp.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -951,8 +951,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: When the little girl's soul left her body, she saw the cat.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1522,8 +1522,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 79.69705}
-  m_SizeDelta: {x: 324.3324, y: 72.6059}
+  m_AnchoredPosition: {x: 0, y: 72.124}
+  m_SizeDelta: {x: 427.8369, y: 87.752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641739966
 MonoBehaviour:
@@ -1547,8 +1547,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a98dad18d53a4a542ae296aa67dd28f5, type: 2}
+  m_sharedMaterial: {fileID: 371084504213300496, guid: a98dad18d53a4a542ae296aa67dd28f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1579,8 +1579,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1659,7 +1659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.8543, y: -8.972623}
+  m_AnchoredPosition: {x: 1.8543, y: -31}
   m_SizeDelta: {x: 163.7087, y: 74.4417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1823768769
@@ -1834,8 +1834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The cat failed to protect the girl.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1968,8 +1968,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Restart
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
+  m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1999,7 +1999,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
