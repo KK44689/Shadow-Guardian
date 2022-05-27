@@ -17,12 +17,18 @@ public class MovableObstacle : MonoBehaviour
     // animation
     Animator anim;
 
+    // sound
+    AudioSource audioSource;
+
+    public AudioClip catProtectSound;
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         anim = GameObject.Find("spiritBody").GetComponent<Animator>();
+        audioSource = Player.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,14 +44,13 @@ public class MovableObstacle : MonoBehaviour
         // check if obstacles damage player
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("player damaged");
             Destroy (gameObject);
         }
 
         // check if spirit protect the player
         if (other.gameObject.CompareTag("Spirit"))
         {
-            Debug.Log("spirit protect");
+            audioSource.PlayOneShot (catProtectSound);
             anim.SetBool("attack", true);
             Vector3 reflectDistant =
                 (transform.position - Player.transform.position);
@@ -53,7 +58,6 @@ public class MovableObstacle : MonoBehaviour
             rb
                 .AddForce(reflectDistant * obstacleReflectForce,
                 ForceMode2D.Impulse);
-            // Destroy (gameObject);
         }
     }
 

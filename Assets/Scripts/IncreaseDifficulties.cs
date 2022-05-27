@@ -24,23 +24,12 @@ public class IncreaseDifficulties : MonoBehaviour
         StartCoroutine(DecreaseDelaysSpawnRate());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     IEnumerator DecreaseDelaysSpawnRate()
     {
         while (true)
         {
             yield return new WaitForSeconds(delayIncreaseDifficulties);
 
-            // Debug
-            //     .Log("movable rate : " +
-            //     spawnManagerScript.s_obstacleMovableSpawnRate);
-            // Debug
-            //     .Log("still rate : " +
-            //     spawnManagerScript.s_obstacleStillSpawnRate);
             // check if movable spawn rate below zero
             if (spawnManagerScript.s_obstacleMovableSpawnRate <= 0.1f)
             {

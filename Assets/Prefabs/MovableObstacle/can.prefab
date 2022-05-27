@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleForce: 0.1
   obstacleReflectForce: 100
+  catProtectSound: {fileID: 8300000, guid: 724131bc8a7f34041bb9f1701f0cb58d, type: 3}
 --- !u!61 &3614401387256029528
 BoxCollider2D:
   m_ObjectHideFlags: 0
