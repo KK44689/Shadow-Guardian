@@ -22,12 +22,11 @@ public class tutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && index < tutorials.Length)
         {
             tutorials[0].SetActive(false);
-
             tutorials[index - 1].SetActive(false);
             tutorials[index].SetActive(true);
             index++;
         }
-        if (index >= tutorials.Length)
+        else if (Input.GetKeyDown(KeyCode.Space) && index >= tutorials.Length)
         {
             SceneManager.LoadScene (mainSceneId);
         }
