@@ -31,6 +31,9 @@ public class SpiritPivot : MonoBehaviour
     // game Manager
     GameManager gameManager;
 
+    // animation
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +43,7 @@ public class SpiritPivot : MonoBehaviour
         reloadingAlertText.gameObject.SetActive(false);
         gameManager =
             GameObject.Find("GameManager").GetComponent<GameManager>();
+        anim = GameObject.Find("spiritBody").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -90,9 +94,14 @@ public class SpiritPivot : MonoBehaviour
         if (gameManager.isGameActive)
         {
             soulsCountText.text = "Souls Count : " + soulCounts;
+            // if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+            // {
+            //     anim.SetBool("attack", false);
+            // }
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 CheckSoulCounts();
+                anim.SetBool("attack", true);
                 Debug.Log("souls " + soulCounts);
             }
             if (Input.GetKeyDown(KeyCode.R))
@@ -131,6 +140,7 @@ public class SpiritPivot : MonoBehaviour
         Vector3 spawnPos =
             new Vector3(Spirit.transform.position.x,
                 Spirit.transform.position.y + 2f);
+
         GameObject soulFragmentPrefab =
             Instantiate(soulFragment,
             spawnPos,

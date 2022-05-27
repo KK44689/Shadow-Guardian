@@ -14,11 +14,15 @@ public class MovableObstacle : MonoBehaviour
     [SerializeField]
     private float obstacleReflectForce = 10f;
 
+    // animation
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
+        anim = GameObject.Find("spiritBody").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,6 +46,7 @@ public class MovableObstacle : MonoBehaviour
         if (other.gameObject.CompareTag("Spirit"))
         {
             Debug.Log("spirit protect");
+            anim.SetBool("attack", true);
             Vector3 reflectDistant =
                 (transform.position - Player.transform.position);
             reflectDistant.Normalize();
@@ -49,6 +54,14 @@ public class MovableObstacle : MonoBehaviour
                 .AddForce(reflectDistant * obstacleReflectForce,
                 ForceMode2D.Impulse);
             // Destroy (gameObject);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Spirit"))
+        {
+            anim.SetBool("attack", false);
         }
     }
 }
