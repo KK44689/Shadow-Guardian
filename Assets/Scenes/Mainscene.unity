@@ -451,7 +451,6 @@ GameObject:
   - component: {fileID: 290656450}
   - component: {fileID: 290656449}
   - component: {fileID: 290656452}
-  - component: {fileID: 290656453}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
@@ -535,18 +534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 0.4
---- !u!114 &290656453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290656448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b887653c51e46414189a612d2de92942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &434380105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1095,6 @@ GameObject:
   - component: {fileID: 975996968}
   - component: {fileID: 975996967}
   - component: {fileID: 975996970}
-  - component: {fileID: 975996971}
   m_Layer: 0
   m_Name: road
   m_TagString: Untagged
@@ -1192,18 +1178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 0.5
---- !u!114 &975996971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975996966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b887653c51e46414189a612d2de92942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1004792095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,10 +2283,10 @@ RectTransform:
   m_Father: {fileID: 676368649}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.12375, y: 0.75555545}
-  m_AnchorMax: {x: 0.38625002, y: 0.98444444}
-  m_AnchoredPosition: {x: 239, y: -199.5}
-  m_SizeDelta: {x: -110, y: -3}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 43, y: -33}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1644816477
 GameObject:
@@ -2688,10 +2662,10 @@ RectTransform:
   m_Father: {fileID: 676368649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -132, y: -40}
-  m_SizeDelta: {x: 210.11969, y: 35.528503}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 268, y: 185}
+  m_SizeDelta: {x: 210.1197, y: 35.5285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659076715
 MonoBehaviour:
