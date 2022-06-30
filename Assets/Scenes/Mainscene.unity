@@ -1494,10 +1494,10 @@ RectTransform:
   m_Father: {fileID: 1620812495}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.7328, y: 209}
-  m_SizeDelta: {x: 205.3674, y: 42.5832}
+  m_AnchorMin: {x: 0.41750002, y: 0.81555563}
+  m_AnchorMax: {x: 0.67750007, y: 0.9311113}
+  m_AnchoredPosition: {x: 3.2671814, y: 8.0000305}
+  m_SizeDelta: {x: -2.6325989, y: -9.416809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114247008
 MonoBehaviour:
@@ -1521,7 +1521,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'You''re Out of Souls !!
 
-    Press R to absorb more souls.'
+    Press R or Absorb to absorb more souls.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
   m_sharedMaterial: {fileID: -1279340592940591194, guid: 33d8b27ae23a0154c9ad8a441832328d, type: 2}
@@ -2419,10 +2419,10 @@ RectTransform:
   m_Father: {fileID: 1620812495}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -37.503113, y: 196.54642}
-  m_SizeDelta: {x: 150.215, y: 40.1729}
+  m_AnchorMin: {x: 0.41750002, y: 0.81555563}
+  m_AnchorMax: {x: 0.60250014, y: 0.9044445}
+  m_AnchoredPosition: {x: -2.5031357, y: 1.5464172}
+  m_SizeDelta: {x: 2.2149963, y: 0.17289734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384844081
 MonoBehaviour:
@@ -2821,10 +2821,10 @@ RectTransform:
   m_Father: {fileID: 676368649}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43, y: -33}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1644816477
 GameObject:
@@ -3200,10 +3200,10 @@ RectTransform:
   m_Father: {fileID: 676368649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 268, y: 185}
-  m_SizeDelta: {x: 210.1197, y: 35.5285}
+  m_AnchorMin: {x: 0.70500004, y: 0.87555563}
+  m_AnchorMax: {x: 0.96875, y: 0.9488889}
+  m_AnchoredPosition: {x: -1.5, y: -0.5}
+  m_SizeDelta: {x: -0.88031006, y: 2.5285034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659076715
 MonoBehaviour:
@@ -3736,10 +3736,10 @@ RectTransform:
   m_Father: {fileID: 1620812495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.8, y: 191}
-  m_SizeDelta: {x: 209.7406, y: 94.203}
+  m_AnchorMin: {x: 0.11625001, y: 0.7533334}
+  m_AnchorMax: {x: 0.38250002, y: 0.95333344}
+  m_AnchoredPosition: {x: 0.6999817, y: -0.99998474}
+  m_SizeDelta: {x: -3.2593994, y: 4.203003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108266610
 MonoBehaviour:
