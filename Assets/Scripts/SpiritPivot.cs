@@ -68,6 +68,14 @@ public class SpiritPivot : MonoBehaviour
             SystemInfo.deviceType == DeviceType.Desktop
                 ? "Desktop"
                 : "Handheld";
+        if(platform == "Handheld"){
+            absorbButton.gameObject.SetActive(true);
+            shootButton.gameObject.SetActive(true);
+        }
+        if(platform == "Desktop"){
+            absorbButton.gameObject.SetActive(false);
+            shootButton.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
