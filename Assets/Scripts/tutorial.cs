@@ -19,16 +19,19 @@ public class tutorial : MonoBehaviour
     private void Start()
     {
         tutorials[0].SetActive(true);
+        CheckDevice();
     }
+
+    public string platform { get; set; }
 
     private void Update()
     {
-        if (CheckDevice() == "Desktop")
+        if (platform == "Desktop")
         {
             clickText.SetActive(true);
             tapText.SetActive(false);
         }
-        if (CheckDevice() == "Handheld")
+        if (platform == "Handheld")
         {
             clickText.SetActive(false);
             tapText.SetActive(true);
@@ -46,22 +49,22 @@ public class tutorial : MonoBehaviour
         }
     }
 
-    private string CheckDevice()
+    private void CheckDevice()
     {
         //Check if the device running this is a desktop
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            return "Desktop";
+            platform = "Desktop";
         }
 
         //Check if the device running this is a handheld
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {
-            return "Handheld";
+            platform = "Handheld";
         }
         else
         {
-            return "Error";
+            platform = SystemInfo.deviceType.ToString();
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpiritPivot : MonoBehaviour
 {
@@ -39,6 +40,17 @@ public class SpiritPivot : MonoBehaviour
 
     public AudioClip catAttackSound;
 
+    // mobile button
+    public Button absorbButton;
+
+    public Button shootButton;
+
+    private string platform;
+
+    private bool isAbsorbButtonPressed = false;
+
+    private bool isShootButtonPressed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +62,12 @@ public class SpiritPivot : MonoBehaviour
             GameObject.Find("GameManager").GetComponent<GameManager>();
         anim = GameObject.Find("spiritBody").GetComponent<Animator>();
         audioSource = Player.GetComponent<AudioSource>();
+
+        // check platform
+        platform =
+            SystemInfo.deviceType == DeviceType.Desktop
+                ? "Desktop"
+                : "Handheld";
     }
 
     // Update is called once per frame
@@ -100,16 +118,28 @@ public class SpiritPivot : MonoBehaviour
         if (gameManager.isGameActive)
         {
             soulsCountText.text = "Souls Count : " + soulCounts;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || isShootButtonPressed)
             {
                 CheckSoulCounts();
                 anim.SetBool("attack", true);
+                isShootButtonPressed = false;
             }
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) || isAbsorbButtonPressed)
             {
                 StartCoroutine(ReloadDelay());
+                isAbsorbButtonPressed = false;
             }
         }
+    }
+
+    public void CheckAbsorbSoulPressed()
+    {
+        isAbsorbButtonPressed = true;
+    }
+
+    public void CheckShootPressed()
+    {
+        isShootButtonPressed = true;
     }
 
     void CheckSoulCounts()
